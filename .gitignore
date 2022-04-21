@@ -1,0 +1,6 @@
+# node-waf configuration
+.lock-wscript
+.git
+
+node_modules/
+jspm_packages/
