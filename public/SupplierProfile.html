@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Supplier Profile - Personal Information</title>
+</head>
+<body>
+    <div class="drawer drawer-mobile">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle">
+        <div class="drawer-content flex flex-col">
+            <!-- Navbar -->
+            <div class="w-full navbar bg-base-300">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </label>
+                </div> 
+
+                <div class="flex-1 px-2 mx-2"></div>
+
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <a href="#"><i class="far fa-message"style="font-size:18px;color:black;"></i></a>
+                            </div>
+                        </label>
+
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <a href="#"><i class="far fa-bell"style="font-size:18px;color:black;"></i></a>
+                            </div>
+                        </label>
+
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <a href="#"><i class="far fa-circle-question"style="font-size:18px;color:black;"></i></a>
+                            </div>
+                        </label>
+
+                        <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                            <div class="card-body">
+                            <span class="font-bold text-lg">8 Items</span>
+                            <span class="text-info">Subtotal: $999</span>
+                            <div class="card-actions">
+                                <button class="btn btn-primary btn-block">View cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown dropdown-end">
+                      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="img/profile.jpg" />
+                        </div>
+                      </label>
+
+                      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                          <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                          </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer drawer-mobile">
+                <input id="my-drawer-2" type="checkbox" class="drawer-toggle">
+                <div class="drawer-content flex flex-col">
+                    <h1 class="p-10 font-bold text-xl">Update Supplier Description</h1>
+                    <div class="tabs pr-10 pl-10">
+                        <a class="tab tab-lifted tab-active font-bold ctmp">Personal Information</a> 
+                        <a class="tab tab-lifted">Insurance</a> 
+                        <a class="tab tab-lifted">Consultants</a>
+                    </div>
+
+                    <div class="flex flex-col pl-10 pr-10">
+                        <div class="form-control">
+                            <div class="grid ctmp p-10 font-bold text-sm">
+                                <h4 class="font-bold text-sm pb-3">Logo</h4>
+                                <div class="grid rounded-xl ctmd">
+                                    <li class="list-none text-center pt-5 pr-5 pl-5">
+                                        <a href="#">
+                                            <i class="fa fa-picture-o text-3xl"></i>
+                                        </a>
+                                    </li>
+                                    <h6 class="ctmh text-center pb-5 pr-5 pl-5">
+                                        <p>Upload a file</p> or drag and drop PNG, JPG, GIF up to 10MB
+                                    </h6>
+                                </div>
+
+                                <h4 class="font-bold text-sm pb-3 pt-3">Organization name*</h4>
+                                <input type="text" class="input w-full rounded-xl ctmc">
+
+                                <h4 class="font-bold text-sm pb-3 pt-3">Description</h4>
+                                <textarea class="textarea textarea-bordered rounded-xl ctmc h-24"></textarea>
+
+                                <div class="flex justify-center">
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Registration type</h4>
+                                        <select class="select select-bordered w-64 rounded-xl ctmc">
+                                            <option disabled selected></option>
+                                            <option>Test</option>
+                                            <option>test</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Registration Number</h4>
+                                        <input type="text" class="input w-64 rounded-xl ctmc">
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center">
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Notification address <i class="fa fa-exclamation-circle" style="color: #21B6C7;"></i></h4>
+                                        <input type="text" class="input w-64 rounded-xl ctmc">
+                                    </div>
+                                    
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Will Received Notifications?* <i class="fa fa-exclamation-circle" style="color: #21B6C7;"></i></h4>
+                                        <input type="text" class="input w-64 rounded-xl ctmc">
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center">
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Website</h4>
+                                        <input type="text" class="input w-64 rounded-xl ctmc">
+                                    </div>
+                                    
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3 mix-blend-color">Registration Number</h4>
+                                        <select class="select select-bordered w-64 rounded-xl ctmc">
+                                            <option disabled selected></option>
+                                            <option>Test</option>
+                                            <option>test</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center">
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Linkedin</h4>
+                                        <input type="text" class="input w-64 rounded-xl ctmc">
+                                    </div>
+                                    
+                                    <div class="inline-block pl-1 pr-1">
+                                        <h4 class="font-bold text-sm pb-3 pt-3">Facebook</h4>
+                                        <input type="text" class="input w-64 rounded-xl ctmc">
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-end pt-5 pr-5 ctmb">
+                                    <a class="link btn btn-outline border-0 no-underline" href="#">CANCEL</a>
+                                    <a class="link btn ctsave no-underline rounded-xl pl-6 pr-6 pt-2 pb-2 border-0" href="#">SAVE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drawer-side">
+                  <label for="my-drawer-2" class="drawer-overlay"></label> 
+                  <ul class="menu p-4 overflow-y-auto w-80 bg-fuchsia-800 text-white ctmul">
+                    <li class="active"><a href="#"><i class="fa fa-pencil"></i> Edit Profile </a></li>
+					<li class=""><a href="#"><i class="fa fa-eye"></i> View Profile </a></li>
+					<li class=""><a href="#"><i class="fa fa-video"></i> 3-step process </a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="drawer-side">
+            <label for="my-drawer-2" class="drawer-overlay"></label> 
+            
+            <ul class="menu p-4 overflow-y-auto w-80 bg-slate-900 text-white">
+                <img src="img/mcl.png" alt="">
+                <li><a href="#"><i class="fas fa-border-all"></i> Dashboard </a></li>
+                <li class="active"><a href="#"><i class="fas fa-user"></i> Supplier Profile </a></li>
+                <li><a href="#"><i class="fas fa-location-pin"></i> My Locations </a></li>
+                <li><a href="#"><i class="fas fa-user-group"></i> Manage Administrators </a></li>
+                <li><a href="#"><i class="fas fa-hand-holding"></i> My Services </a></li>
+                <li><a href="#"><i class="fas fa-building"></i> Manage Employers </a></li>
+                <li><a href="#"><i class="fas fa-certificate"></i> Supplier Badge </a></li>
+                <li><a href="#"><i class="fas fa-handshake-simple"></i> My Clients </a></li>
+                <li><a href="#"><i class="fas fa-dollar-sign"></i> My Orders </a></li>
+                <li><a href="#"><i class="fas fa-circle-question"></i> Client Questions </a></li>
+                <li><a href="#"><i class="fas fa-file-invoice-dollar"></i> Bills </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2b49144583.js"></script>
+</body>
+</html>

@@ -1,4 +1,9 @@
 module.exports = {
-    //...
-    plugins: [require("daisyui")],
-  }
+  mode: 'jit',
+  purge: ['*.html'],
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+}
